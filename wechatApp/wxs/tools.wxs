@@ -1,0 +1,14 @@
+var foo = "'hello world' from tools.wxs";
+
+var bar =function(d){
+  return d
+}
+var formatTime=function(d){
+  return d+'aaa'
+}
+module.exports={
+  FOO:foo,
+  bar:bar,
+  formatTime:formatTime,
+  msg:"wxs模块化"
+}

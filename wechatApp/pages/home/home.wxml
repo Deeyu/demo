@@ -1,0 +1,27 @@
+<!--pages/home/home.wxml-->
+
+<view class='header-tab'>
+  <view class='tab-item' wx:for="{{tabs}}" wx:key="{{index}}" data-id='{{index}}' bindtap='handleClick'>
+    <text class='{{flag==index?"tab-text active":"tab-text"}}'>{{item}}</text>
+  </view>
+  <navigator class="tab-item search">
+    <icon type="search" size="18" color="#666" />
+  </navigator>
+</view>
+<swiper indicator-dots="true" autoplay="true" circular="true">
+  <swiper-item wx:for="{{bannerData}}" wx:key="{{item.targetId}}">
+    <image mode='widthFix' class='slide-img' src='{{item.pic}}' width="750" height="290"></image>
+  </swiper-item>
+</swiper>
+<scroll-view class='news' scroll-y="true" lower-threshold='{{50}}' bindscrolltolower='{{loadMore}}'>
+  <view class='news-item' wx:for='{{newsData}}' wx:key='{{index}}'>
+    <view class='newsimg'>
+      <image mode='widthFix' src='{{item.image_url}}'></image>
+    </view>
+    <view class='newstitle'>
+      <navigator url='{{item.group_id}}'>
+        <text>{{item.title}}</text>
+      </navigator>
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/news/news",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/cart/cart",
+    "pages/newdetail/newdetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#777",
+    "navigationBarTitleText": "内涵段子",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle":"white",
+    "color":"#000",
+    "selectedColor":"#CF3E3E",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/images/home2.png",
+        "selectedIconPath": "assets/images/home1.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "assets/images/cart2.png",
+        "selectedIconPath": "assets/images/cart1.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "我的",
+        "iconPath": "assets/images/center2.png",
+        "selectedIconPath": "assets/images/center1.png"
+      }
+    ]
+  }
+}

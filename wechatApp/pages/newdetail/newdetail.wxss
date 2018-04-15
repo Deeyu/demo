@@ -1,0 +1,10 @@
+/* pages/newdetail.wxss */
+@import '../../wxParse/wxParse.wxss';
+.other-navigator-hover {
+    color:red;
+}
+page{
+   padding: 20px; 
+  /* margin: 10px; */
+  box-sizing: border-box;
+}
